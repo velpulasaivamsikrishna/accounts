@@ -1,3 +1,11 @@
 spring:
   application:
     name: accounts
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/accounts
+  jpa:
+    hibernate:
+      ddl-auto: update
